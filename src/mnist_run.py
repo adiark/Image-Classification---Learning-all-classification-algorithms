@@ -429,16 +429,16 @@ def load_datacsv():
 
     # due to restricted resource allocation using subset of data
     # randomly generating subset 
-    random_index_X_train = X_train.index.values.tolist()
-    random_values_X_train = random.sample(random_index_X_train, 20000)
-    X_train = X_train.loc[random_values_X_train]
-    y_train = y_train.loc[random_values_X_train]
+    # random_index_X_train = X_train.index.values.tolist()
+    # random_values_X_train = random.sample(random_index_X_train, 20000)
+    # X_train = X_train.loc[random_values_X_train]
+    # y_train = y_train.loc[random_values_X_train]
 
-    random_index_X_test = X_test.index.values.tolist()
-    random_values_X_test = random.sample(random_index_X_test, 3000)
+    # random_index_X_test = X_test.index.values.tolist()
+    # random_values_X_test = random.sample(random_index_X_test, 3000)
    
-    X_test = X_test.loc[random_values_X_test]
-    y_test = y_test.loc[random_values_X_test]
+    # X_test = X_test.loc[random_values_X_test]
+    # y_test = y_test.loc[random_values_X_test]
 
     class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
                    'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']

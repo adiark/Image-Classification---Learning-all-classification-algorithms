@@ -309,7 +309,7 @@ def run_app():
 
 @st.cache(show_spinner=False) 
 def get_file_content_as_string(path):
-    url = 'https://raw.githubusercontent.com/adiark/Fashion-Image-Classification---MNIST/master/' + path
+    url = 'https://raw.githubusercontent.com/adiark/Image-Classification---Learning-all-classification-algorithms/master/' + path
     response = urllib.request.urlopen(url)
     return response.read().decode("utf-8")
 
